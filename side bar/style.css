@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-color: palegreen;
+    /* overflow: hidden; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.left-menu{
+    background-color: white;
+    position: relative;
+    height: 100vh;
+    width: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s ease;
+}
+
+.left-menu:hover{
+    width: 12rem;
+}
+
+
+.left-menu ul li a {
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0 ;
+    width: 80px;
+    position: relative;
+    top: 1rem;
+
+}
+
+.logo span {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo a {
+    position: relative;
+    left: 180px;
+    color: #7410f0;
+    font-size: 15px;
+    display: table;
+    text-align: left;
+    width: 300px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.left-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: .5rem;
+    margin-left: 2rem;
+}
+
+.left-menu li{
+    list-style: none;
+    /* padding: .1rem; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-top: 1rem;
+    transition: all .4s linear;
+}
+
+.left-menu li a{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: .7rem;
+    color: #7410f0;
+}
+
+.left-menu ul li a i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .3s linear;
+    margin-right: 1.5rem;
+}
+
+
+.sidebar-item i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: .1rem;
+
+}
+
+#settings{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.sidebar-item:hover {
+    transform: translateX(.4rem);
+    transition: all .4s linear;
+}
+
+.sidebar-item:hover .fa-solid,
+.sidebar-item:hover a {
+    font-weight: bold;
+    color: purple;
+}

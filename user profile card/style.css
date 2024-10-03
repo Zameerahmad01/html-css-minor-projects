@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgb(237, 233, 224);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 35rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     background-color: rgb(31, 31, 32);
+     color: white;
+     border-radius: 20px;
+     padding: 25px;
+     margin: 25px;
+}
+
+.top-navigation{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+
+}
+
+.top-navigation ul i {
+    margin-left: 10px;
+}
+.user-image img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.user-name{
+    font-size: 2rem;
+}
+
+.about-user,.user-name{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hire-me{
+    padding: 10px 25px;
+    border-radius: 20px;
+    /* outline: none; */
+    display: block;
+    border: none;
+    font-size: 1rem;
+    margin: 20px auto;
+    transition: all .5s;
+
+}
+
+.hire-me:hover{
+    transform: translateY(-5px);
+    /* background-color: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%#fd5949 45%, #d6249f 60%, #285aeb 90%); */
+    background-color: cyan;
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 50px;
+    margin-top: 20px;
+}
+
+.social-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 5px;
+    list-style: none;
+}
+.social-item li {
+    list-style: none;
+    padding: 0.8rem;
+    border-radius: 15%;
+}
+
+.instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.youtube{
+    background-color: #ff0000;
+}
+
+.twitter{
+    background-color: #1D9BF0;
+}
+
+.social-item i{
+    font-size: 2rem;
+}
